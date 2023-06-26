@@ -38,6 +38,7 @@ let totalScore = 0;
 
 for (let i = 0; i < lengthOfResults; i++) {
     imgs[i].src = data[i].icon;
+    imgs[i].setAttribute('alt',data[i].icon.split('/')[2]);
     lis[i].classList = `backgroundColor_${data[i].color}`;
     categories[i].innerText = data[i].category;
     myScores[i].innerText = data[i].score;
